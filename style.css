@@ -18,7 +18,7 @@ main{
   font-family: 'mainFont';
   font-size: 13px;
   background-color: white;
-  width: 90%;
+  width: 88vw;
   max-width: 500px;
   min-width: 240px;
   padding: 15px;
@@ -59,4 +59,18 @@ input#searchButton{
   width: 10%;
   padding: 1.5cqmin;
   font-size: 2.5cqmin;
+}
+footer{
+  background-color: white;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  transform: translate(-0%, -100%);
+}
+footer>p{
+  text-align: center;
+  font-family: 'mainFont';
+  font-size: 10px;
+  margin: 0;
 }
