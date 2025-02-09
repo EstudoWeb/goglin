@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'mainFont';
+  src: url('./fonts/LEMONMILK-Medium.otf') format(opentype);
+  font-weight: normal;
+}
+
+*{
+  text-align: left;
+}
+body{
+  background-color: rgb(254, 249, 175);
+}
+main{
+  font-family: 'mainFont';
+  font-size: 13px;
+  background-color: white;
+  width: 90%;
+  max-width: 500px;
+  min-width: 240px;
+  padding: 15px;
+  text-align: center;
+  margin: auto;
+  border: 1px solid rgba(0, 0, 0, 0.593);
+  box-shadow: 1px 1px 2px black;
+  border-radius: 10px;
+}
+img#logo{
+  width: 55%;
+}
+p#inform{
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 21px;
+}
+input#valuesearch{
+  font-family: monospace;
+  font-size: 12px;
+  outline: 0;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(219, 219, 219);
+  width: 90%;
+}
+div#searchArea{
+  margin: auto;
+  text-align: center;
+  display: flex;
+  gap: 1.5vw;
+}
+input#searchButton{
+  border: 0.5px solid gray;
+  border-radius: 40%;
+  text-align: center;
+  width: 10%;
+  padding: 1.5cqmin;
+  font-size: 2.5cqmin;
+}
