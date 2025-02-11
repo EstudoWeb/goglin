@@ -11,8 +11,19 @@ body{
   background-color: rgb(254, 249, 175);
 }
 header>p {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  padding: 5px;
+  width: fit-content;
+  border-radius: 5px;
   font-family: monospace;
-  text-align: right;
+  font-weight: lighter;
+  margin: 10px 10px 0 0;
+}
+header{
+  display: flex;
+  justify-content: end;
 }
 main{
   position: absolute;
