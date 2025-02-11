@@ -12,8 +12,9 @@ body{
 }
 header>p {
   background-color: white;
-  border: 1px solid black;
-  color: black;
+  border: 2px solid rgb(0, 164, 164);
+  color: rgb(0, 164, 164);
+  box-shadow: 1px 1px 4px;
   padding: 5px;
   width: fit-content;
   border-radius: 5px;
