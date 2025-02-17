@@ -76,6 +76,22 @@ input#searchButton{
   padding: 1.5cqmin;
   font-size: 2.5cqmin;
 }
+#ipLink{
+  text-align: center;
+  width: max-content;
+  margin: 20px 10px 10px 10px;
+  padding: 6px;
+  border: none;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 10px;
+}
+#ipLink::after{
+  content: ' ⬅️';
+}
+#ipLink::before{
+  content: '➡️ ';
+}
 footer{
   background-color: white;
   width: 100%;

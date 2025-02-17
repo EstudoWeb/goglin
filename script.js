@@ -1,6 +1,11 @@
 let valueForSearch = document.getElementById('valuesearch')
 let search = document.getElementById('searchButton')
 let resForSearch = document.getElementById('res')
+let ipLink = document.getElementById('ipLink')
+
+ipLink.addEventListener('click', function(){
+  window.location.href = "src/ip.html"
+})
 
 search.addEventListener('click', ()=>createSearch(valueForSearch.value))
 
@@ -8,7 +13,7 @@ const createSearch=(value)=>{
   if(value.replace(/\D/g, "").length != 8){
     resForSearch.innerHTML = "<h2 style='font-family: monospace'>Esse cep não tem 8 digítos!</h2>"
   }else{
-    resForSearch.innerHTML = "<h2>Carregando</h2>"
+    resForSearch.innerHTML = "<h2>Carregando...</h2>"
     fetch(`https://viacep.com.br/ws/${value.replace(/\D/g, "")}/json/`)
     .then(res => res.json())
     .then(dados=>{
