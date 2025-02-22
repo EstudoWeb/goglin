@@ -8,22 +8,24 @@
 </head>
 <body>
   <header>
-    <p>v1.9.0</p>
+    <p>v1.92.0</p>
   </header>
   <main>
     <img src="images/logo2.png" alt="logo" id="logo">
-    <p id="inform">Consulte um cep:</p>
-    <div id="searchArea">
-      <input type="text" id="valuesearch" placeholder="Digite um cep para consultar">
-      <input type="button" id="searchButton" value="🔎">
-    </div>
-    <div id="res"></div>
-    <br>
-    <button id="ipLink">consulta de ip</button>
+    <h2>Escolha uma opção abaixo</h2>
+    <p>Essas opções são ilimitadas e grátis, escolha uma:</p>
+    <div id="pagelinks">
+      <button class="ipLink" id="consulCep">Consultador de CEP 🏠</button>
+      <br>
+      <button class="ipLink" id="consulIp">Consultador de IP 🛜</button>
+      <br>
+      <button class="ipLink" id="consulLocal">Consultador de local exato 🌎</button>
+   </div>
   </main>
   <footer>
     <p>&copy; Criado por Rodney Brandão em 2025</p>
   </footer>
   <script src="script.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>

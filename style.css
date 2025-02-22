@@ -62,6 +62,16 @@ input#valuesearch{
   background-color: rgb(219, 219, 219);
   width: 90%;
 }
+.valuesearch{
+  font-family: monospace;
+  font-size: 12px;
+  outline: 0;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(219, 219, 219);
+  width: 90%;
+}
 div#searchArea{
   margin: auto;
   text-align: center;
@@ -76,21 +86,45 @@ input#searchButton{
   padding: 1.5cqmin;
   font-size: 2.5cqmin;
 }
-#ipLink{
+.ipLink{
   text-align: center;
-  width: max-content;
-  margin: 20px 10px 10px 10px;
+  width: 80%;
+  margin: 20px 0px 10px 0px;
   padding: 6px;
-  border: none;
+  border: 1px solid rgb(83, 83, 83);
   background-color: cornflowerblue;
   color: white;
   border-radius: 10px;
+  transition: all .5s;
 }
-#ipLink::after{
-  content: ' ⬅️';
+.ipLink:hover{
+  background-color: white;
+  border: 1px solid cornflowerblue;
+  color: cornflowerblue;
 }
-#ipLink::before{
-  content: '➡️ ';
+.ipLink2{
+  text-align: center;
+  width: max-content;
+  margin: 20px 0px 10px 0px;
+  padding: 6px;
+  border: 1px solid white;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 10px;
+  transition: all .5s;
+}
+.ipLink2::before{
+  content: '⬅️ ';
+}
+.ipLink2:hover{
+  background-color: white;
+  border: 1px solid cornflowerblue;
+  color: cornflowerblue;
+}
+#pagelinks{
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
 }
 footer{
   background-color: white;
@@ -105,4 +139,14 @@ footer>p{
   font-family: 'mainFont';
   font-size: 10px;
   margin: 0;
+}
+
+@media (min-width: 450px){
+  .ipLink{
+    padding: 13px;
+  }
+  .ipLink2{
+    padding: 12px;
+    width: max-content;
+  }
 }

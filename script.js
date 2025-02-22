@@ -1,11 +1,6 @@
 let valueForSearch = document.getElementById('valuesearch')
 let search = document.getElementById('searchButton')
 let resForSearch = document.getElementById('res')
-let ipLink = document.getElementById('ipLink')
-
-ipLink.addEventListener('click', function(){
-  window.location.href = "src/ip.html"
-})
 
 search.addEventListener('click', ()=>createSearch(valueForSearch.value))
 
