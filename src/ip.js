@@ -1,3 +1,5 @@
+//Código feito totalmente por Rodney Brandão em 2025
+
 let valueForSearch = document.getElementById('valuesearch')
 let search = document.getElementById('searchButton')
 let resForSearch = document.getElementById('res')
@@ -33,10 +35,10 @@ const createSearch=(value)=>{
 }
 }
 
-fetch('http://ip-api.com/json/')
+fetch('https://api64.ipify.org/?format=json')
 .then(res => res.json())
 .then(dados =>{
-  ip.innerHTML = `<strong>Seu ip é:</strong> ${dados.query}`
+  ip.innerHTML = `<strong>Seu ip é:</strong> ${dados.ip}`
 }).catch(err =>{
   ip.innerHTML = `<strong>Não foi possível saber seu ip!</strong>`
   console.error(err)
